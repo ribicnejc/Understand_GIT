@@ -168,6 +168,27 @@ ul.topnav li.dropdownIcon {
 }
 
 
+/*##### Motivation && Content #####*/
+
+div h1.contentTitle {
+    font-size: 150px;
+    font-weight: 100;
+    color: #4D4D4D;
+    margin: 0;
+    padding: 40px 10% 40px 10%;
+}
+
+.imgGitHub {
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+div.motivationContent div.row {
+    padding: 50px;
+}
+
 
 /*##### Mobile #####*/
 @media screen and (max-width: 680px) {

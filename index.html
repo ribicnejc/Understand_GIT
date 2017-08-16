@@ -12,12 +12,19 @@
     <div>
         <nav>
             <ul class="topnav" id="dropdownClick">
-                <li><a href="#mentoring">Mentoring</a></li>
+                <li><a class="item" href="#mentoring">Mentoring</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#home">Home</a></li>
-                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+                <li>
+                    <a href="#blog" onmouseover="myFunction()" onmouseout="myFunction()" class="dropbtn">Blog</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">OAuth</a>
+                        <a href="#">OAuth</a>
+                        <a href="#">OAuth</a>
+                    </div>
+                </li>
+                <li><a class="item" href="#about">About me</a></li>
+                <li><a class="item" href="#home">Home</a></li>
+                <li class="dropdownIcon"><a class="item" href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
             </ul>
         </nav>
 
@@ -26,8 +33,9 @@
                 <div class="col-7">
                     <div class="headerLeftSide-col">
                         <h1 class="headerTitle">Hello.</h1>
-                        <p class="headerParagraph">My name is Nejc Ribič, and this page is meant to show you basic's of
-                            Git, which can serve as cheat sheet or for learning purposes.</p>
+                        <p class="headerParagraph">My name is <b>Nejc Ribič</b>, and this page is meant to show you <b>basic's
+                            of
+                            Git</b>, which can serve as cheat sheet or for <b>learning</b> purposes.</p>
                         <button class="headerButton">Personal page</button>
                     </div>
                 </div>
@@ -64,6 +72,54 @@
             </div>
         </div>
     </div>
+</div>
+<div class="bottomContent">
+    <div>
+        <h1 class="contentTitle">Content</h1>
+        <div class="bottomButtonGroup">
+            <div class="row">
+                <div class="col-4">
+                    <button class="bottomButton">Repositories</button>
+                </div>
+                <div class="col-4">
+                    <button class="bottomButton">Branching</button>
+                </div>
+                <div class="col-4">
+                    <button class="bottomButton">Merging</button>
+                </div>
+
+                <div class="col-4">
+                    <button class="bottomButton">Collaborating</button>
+                </div>
+                <div class="col-4">
+                    <button class="bottomButton">Rebasing</button>
+                </div>
+                <div class="col-4">
+                    <button class="bottomButton">Tagging</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <footer class="bottomFooter">
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-05">
+                <a href="https://www.github.com/ribicnejc"><img class="footerImg" src="assets/github_icon.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="mailto:nejc.ribic95@gmail.com?"><img class="footerImg" src="assets/mail-xxl.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="https://www.linkedin.com/in/nejc-ribi%C4%8D-6a23b3a1/"><img class="footerImg" src="assets/linkedin-3-512.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="https://www.facebook.com/nejc.ribic.3"><img class="footerImg" src="assets/facebook-logo-png-2332.png"></a>
+            </div>
+            <div class="col-5"></div>
+        </div>
+    </footer>
 </div>
 
 </body>

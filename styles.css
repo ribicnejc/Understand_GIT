@@ -34,6 +34,14 @@ p {
     align-items: center;
 }
 
+.col-025 {
+    width: 2.08%;
+}
+
+.col-05 {
+    width: 4.17%;
+}
+
 .col-1 {
     width: 8.33%;
 }
@@ -86,8 +94,12 @@ p {
     box-sizing: border-box;
 }
 
-/*##### Nav Bar #####*/
 
+
+
+
+
+/*##### Nav Bar #####*/
 nav {
     width: 100%;
     margin: 0;
@@ -97,6 +109,9 @@ nav ul {
     overflow: hidden;
     margin: 0;
     padding: 0;
+    background-color: #F3755E;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*box-shadow: -2px!*H*! -2px!*V*! 20px!*B*! 2px!*S*! rgba(0!*Sh*!, 0!*BG*!, 0!*BX*!, .15!*Opacity*!), 2px 2px 17px 2px rgba(0,0,0,1);*/
 }
 
 ul.topnav li {
@@ -122,11 +137,63 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
+
+
+
+/*##### Dropdown button #####*/
+.dropbtn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.dropbtn {
+}
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: #E5E5E5;
+    color: #F3755E;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #666666;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+}
+
+
 /*##### Header Main Content #####*/
 .mainContent {
     /*background-color: #F3755E;*/
     background: url("assets/main_bg.png");
-    /*background-size: 120% ;*/
+    background-size: 100% 100% ;
 }
 
 
@@ -168,10 +235,12 @@ ul.topnav li.dropdownIcon {
 }
 
 
-/*##### Motivation && Content #####*/
 
+
+
+/*##### Motivation && Content #####*/
 div h1.contentTitle {
-    font-size: 150px;
+    font-size: 120px;
     font-weight: 100;
     color: #4D4D4D;
     margin: 0;
@@ -179,7 +248,7 @@ div h1.contentTitle {
 }
 
 .imgGitHub {
-    height: 200px;
+    height: 250px;
     width: auto;
     margin: auto;
     display: block;
@@ -190,8 +259,68 @@ div.motivationContent div.row {
 }
 
 
+
+
+
+
+/*##### Bottom Content #####*/
+div.bottomContent {
+    background-color: #E5E5E5;
+}
+
+div.bottomContent h1.contentTitle {
+    text-align: center;
+}
+
+button.bottomButton {
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F05033;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border:none;
+    width: 100%;
+    border-radius: 15px;
+}
+
+div.bottomButtonGroup {
+    margin: 0 80px 0 80px;
+    padding: 5px 30px 10px 30px;
+}
+
+div.bottomButtonGroup div.col-4 {
+    padding: 30px;
+}
+
+
+
+
+
+/*##### Footer #####*/
+footer.bottomFooter {
+    padding: 20px ;
+    background-color: #666666;
+}
+
+footer.bottomFooter img.footerImg {
+    width: auto;
+    height: 20px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+
+
 /*##### Mobile #####*/
 @media screen and (max-width: 680px) {
+    /*##### Top Content #####*/
     ul.topnav li:not(:nth-child(5)) {
         display: none;
     }
@@ -225,6 +354,18 @@ div.motivationContent div.row {
         text-align: left;
     }
 
+    a.dropbtn {
+        width: 100%;
+    }
+
+    div.dropdown-content {
+        width: 100%;
+    }
+
+    div.dropdown-content a {
+        margin-left: 30px;
+    }
+
     div.container div.row div.col-7 {
         width: 100%;
 
@@ -249,4 +390,46 @@ div.motivationContent div.row {
     img.headerImage{
         width: 100px;
     }
+
+    /*##### Motivation Content #####*/
+    div.motivationContent h1.contentTitle {
+        font-size: 100px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    div.motivationContent div.col-5,
+    div.motivationContent div.col-7 {
+        width: 100%;
+    }
+
+    div.motivationContent img.imgGitHub {
+        display: none;
+    }
+
+    div.motivationContent div.row {
+        padding-top: 10px;
+    }
+
+
+    /*##### Bottom Content #####*/
+    div.bottomContent h1.contentTitle {
+        font-size: 100px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    div.bottomContent div.col-4 {
+        width: 50%;
+    }
+
+    /*##### Footer #####*/
+    footer.bottomFooter div.col-05{
+        width: 8.33%;
+    }
+
+    footer.bottomFooter div.col-5 {
+        width: 33.33%;
+    }
+
 }

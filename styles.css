@@ -16,9 +16,9 @@ h1,
 h2,
 h3,
 p {
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
 }
-
 
 .container {
     width: 100%;
@@ -94,11 +94,6 @@ p {
     box-sizing: border-box;
 }
 
-
-
-
-
-
 /*##### Nav Bar #####*/
 nav {
     width: 100%;
@@ -110,7 +105,7 @@ nav ul {
     margin: 0;
     padding: 0;
     background-color: #F3755E;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     /*box-shadow: -2px!*H*! -2px!*V*! 20px!*B*! 2px!*S*! rgba(0!*Sh*!, 0!*BG*!, 0!*BX*!, .15!*Opacity*!), 2px 2px 17px 2px rgba(0,0,0,1);*/
 }
 
@@ -123,7 +118,7 @@ ul.topnav li a {
     display: block;
     text-decoration: none;
     min-height: 16px;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     color: #fff;
 }
@@ -137,9 +132,6 @@ ul.topnav li.dropdownIcon {
     display: none;
 }
 
-
-
-
 /*##### Dropdown button #####*/
 .dropbtn {
     cursor: pointer;
@@ -147,7 +139,7 @@ ul.topnav li.dropdownIcon {
     outline: none;
     background-color: inherit;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     display: block;
     text-decoration: none;
     text-align: center;
@@ -155,8 +147,6 @@ ul.topnav li.dropdownIcon {
     color: #fff;
 }
 
-.dropbtn {
-}
 .container a:hover, .dropdown:hover .dropbtn {
     background-color: #E5E5E5;
     color: #F3755E;
@@ -167,7 +157,7 @@ ul.topnav li.dropdownIcon {
     position: absolute;
     background-color: #666666;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -184,18 +174,29 @@ ul.topnav li.dropdownIcon {
     background-color: #ddd;
 }
 
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+}
+
+/*.dropdown:hover .dropbtn {*/
+/*background-color: #3e8e41;*/
+/*}*/
+
 .show {
     display: block;
 }
-
 
 /*##### Header Main Content #####*/
 .mainContent {
     /*background-color: #F3755E;*/
     background: url("assets/main_bg.png");
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
 }
-
 
 .headerLeftSide-col {
     padding-left: 20%;
@@ -212,6 +213,7 @@ ul.topnav li.dropdownIcon {
 
 .headerParagraph {
     color: #FFFFFF;
+    line-height: 1.8;
 }
 
 .headerButton {
@@ -223,28 +225,25 @@ ul.topnav li.dropdownIcon {
     display: block;
     text-align: center;
     margin-top: 65px;
-    border:none;
+    border: none;
     border-radius: 25px;
 }
 
 .headerImage {
     display: block;
-    margin:auto;
+    margin: auto;
     width: 250px;
     height: auto;
 }
 
-
-
-
-
 /*##### Motivation && Content #####*/
+
 div h1.contentTitle {
     font-size: 120px;
     font-weight: 100;
     color: #4D4D4D;
     margin: 0;
-    padding: 40px 10% 40px 10%;
+    padding: 40px 10% 0 10%;
 }
 
 .imgGitHub {
@@ -258,14 +257,18 @@ div.motivationContent div.row {
     padding: 50px;
 }
 
-
-
-
+div.motivationContent p {
+    line-height: 1.8;
+}
 
 
 /*##### Bottom Content #####*/
 div.bottomContent {
     background-color: #E5E5E5;
+}
+
+div.bottomContent h1.contentTitle {
+    padding-bottom: 40px;
 }
 
 div.bottomContent h1.contentTitle {
@@ -282,27 +285,23 @@ button.bottomButton {
     display: block;
     text-align: center;
     margin: auto;
-    border:none;
+    border: none;
     width: 100%;
     border-radius: 15px;
 }
 
 div.bottomButtonGroup {
     margin: 0 80px 0 80px;
-    padding: 5px 30px 10px 30px;
+    padding: 5px 30px 30px 30px;
 }
 
 div.bottomButtonGroup div.col-4 {
     padding: 30px;
 }
 
-
-
-
-
 /*##### Footer #####*/
 footer.bottomFooter {
-    padding: 20px ;
+    padding: 20px;
     background-color: #666666;
 }
 
@@ -312,11 +311,6 @@ footer.bottomFooter img.footerImg {
     margin: auto;
     display: block;
 }
-
-
-
-
-
 
 /*##### Mobile #####*/
 @media screen and (max-width: 680px) {
@@ -371,7 +365,7 @@ footer.bottomFooter img.footerImg {
 
     }
 
-    div.container div.row div.col-7 div.headerLeftSide-col{
+    div.container div.row div.col-7 div.headerLeftSide-col {
         padding: 0;
         margin: 30px;
         text-align: center;
@@ -381,13 +375,13 @@ footer.bottomFooter img.footerImg {
         display: block;
         margin: 50px auto auto;
     }
-    
+
     div.container div.col-5 {
         display: block;
         margin: auto;
     }
 
-    img.headerImage{
+    img.headerImage {
         width: 100px;
     }
 
@@ -411,7 +405,6 @@ footer.bottomFooter img.footerImg {
         padding-top: 10px;
     }
 
-
     /*##### Bottom Content #####*/
     div.bottomContent h1.contentTitle {
         font-size: 100px;
@@ -424,7 +417,7 @@ footer.bottomFooter img.footerImg {
     }
 
     /*##### Footer #####*/
-    footer.bottomFooter div.col-05{
+    footer.bottomFooter div.col-05 {
         width: 8.33%;
     }
 

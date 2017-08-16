@@ -227,6 +227,7 @@ ul.topnav li.dropdownIcon {
     margin-top: 65px;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .headerImage {

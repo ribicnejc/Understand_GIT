@@ -194,7 +194,7 @@ ul.topnav li.dropdownIcon {
 /*##### Header Main Content #####*/
 .mainContent {
     /*background-color: #F3755E;*/
-    background: url("assets/main_bg.png");
+    background: url("../assets/main_bg.png");
     background-size: 100% 100%;
 }
 
@@ -347,6 +347,7 @@ footer.bottomFooter img.footerImg {
     ul.topnav.responsive li a {
         display: block;
         text-align: left;
+        font-size: 1em;
     }
 
     a.dropbtn {
@@ -386,11 +387,25 @@ footer.bottomFooter img.footerImg {
         width: 100px;
     }
 
+    p.headerParagraph,
+    p {
+        font-size: 0.9em;
+    }
+
+    h1.headerTitle {
+        font-size: 3.5em;
+    }
+
+
     /*##### Motivation Content #####*/
     div.motivationContent h1.contentTitle {
-        font-size: 100px;
+        font-size: 3em;
         text-align: center;
         padding-bottom: 0;
+        margin-left: 0;
+        padding-left: 0;
+        margin-right: 0;
+        padding-right: 0;
     }
 
     div.motivationContent div.col-5,
@@ -403,18 +418,25 @@ footer.bottomFooter img.footerImg {
     }
 
     div.motivationContent div.row {
-        padding-top: 10px;
+        padding: 15px;
     }
 
     /*##### Bottom Content #####*/
     div.bottomContent h1.contentTitle {
-        font-size: 100px;
+        font-size: 4em;
         text-align: center;
         padding-bottom: 0;
     }
 
     div.bottomContent div.col-4 {
         width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    div.bottomContent div.bottomButtonGroup {
+        margin: 0;
+        padding: 10px;
     }
 
     /*##### Footer #####*/

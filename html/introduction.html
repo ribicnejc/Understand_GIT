@@ -13,58 +13,116 @@
 <div class="titleBar">
     <h1 class="titleBarTitle">Introduction</h1>
 </div>
-<div class="content1">
-    <div>
-        <h1 class="contentTitle">What is git</h1>
-        <p class="contentParagraph">Git is a free and open source distributed version control system
-            designed to handle everything from small to very large projects
-            with speed and efficiency.</p>
-        <p class="contentParagraph">
-            Git is easy to learn and has a tiny footprint with lightning fast
-            performance. It outclasses SCM tools like Subversion, CVS, Perforce,
-            and ClearCase with features like cheap local branching, convenient
-            staging areas, and multiple workflows.</p>
+<div class="content">
+    <div class="content1">
+        <div>
+            <h1 class="contentTitle">What is git</h1>
+            <p class="contentParagraph">Git is a free and open source distributed version control system
+                designed to handle everything from small to very large projects
+                with speed and efficiency.</p>
+            <p class="contentParagraph">
+                Git is easy to learn and has a tiny footprint with lightning fast
+                performance. It outclasses SCM tools like Subversion, CVS, Perforce,
+                and ClearCase with features like cheap local branching, convenient
+                staging areas, and multiple workflows.</p>
+        </div>
+    </div>
+    <div class="content2">
+        <div>
+            <h1 class="contentTitle">A short History of git</h1>
+            <p class="contentParagraph">As with many great things in life, Git began with a bit of creative destruction
+                and fiery controversy.</p>
+            <p class="contentParagraph">The Linux kernel is an open source software project of fairly large scope.
+                For most of the lifetime of the Linux kernel maintenance (1991–2002), changes
+                to the software were passed around as patches and archived files. In 2002,
+                the Linux kernel project began using a proprietary DVCS called BitKeeper.</p>
+            <p class="contentParagraph">In 2005, the relationship between the community that developed the Linux
+                kernel and the commercial company that developed BitKeeper broke down,
+                and the tool’s free-of-charge status was revoked. This prompted the Linux
+                development community (and in particular Linus Torvalds, the creator of Linux)
+                to develop their own tool based on some of the lessons they learned while
+                using BitKeeper. Some of the goals of the new system were as follows:</p>
+            <p class="contentParagraph">
+            <ul class="listItems">
+                <li><a class="contentParagraph">Speed</a></li>
+                <li><a class="contentParagraph">Simple design</a></li>
+                <li><a class="contentParagraph">Strong support for non-linear development (thousands of parallel branches)</a></li>
+                <li><a class="contentParagraph">Fully distributed</a></li>
+                <li><a class="contentParagraph">Able to handle large projects like the Linux kernel efficiently (speed and data size)</a></li>
+            </ul>
+            <p class="contentParagraph">Since its birth in 2005, Git has evolved and matured to be easy to use and
+                yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large
+                projects, and it has an incredible branching system for non-linear
+                development (See Git Branching).</p>
+        </div>
+    </div>
+    <div class="content3">
+        <div>
+            <h1 class="contentTitle">Understanding git</h1>
+
+            <p class="contentParagraph">
+                The conclusion I draw from this blog is that you can only really use Git
+                if you understand how Git works. Merely memorizing which commands
+                you should run at what times will work in the short run, but it’s only a
+                matter of time before you get stuck or, worse, break something.
+            </p>
+            <p class="contentParagraph">
+                Half of the existing resources on Git, unfortunately, take just that approach:
+                they walk you through which commands to run when, and expect that you
+                should do fine if you just mimic those commands. The other half does go
+                through all the concepts, but from what I have seen, they explain Git in a
+                manner that assumes you already understand how Git works.
+            </p>
+            <p class="contentParagraph">
+                This tutorial, will take a conceptual approach to Git. My goal will be, first
+                and foremost, to explain the Git universe and its objectives, and secondarily
+                to illustrate how to use Git commands to manipulate that universe.
+            <p class="contentParagraph">
+                - I will begin by describing the Git data model, the repository.
+
+                - From there I will describe the various operations Git provides for manipulating
+                the repository, starting from the simplest (adding data to a repository) and
+                moving through the more complex operations of branching and merging.
+
+                - I will then discuss how to use Git in a collaborative setting.
+
+                - Finally I will look at the Git rebase function, which provides an alternative
+                to merging, and consider its pros and cons.
+            </p>
+
+        </div>
     </div>
 </div>
-<div class="content2">
-    <div>
-        <h1 class="contentTitle">A short History of git</h1>
-        <p class="contentParagraph">As with many great things in life, Git began with a bit of creative destruction
-            and fiery controversy.</p>
-        <p class="contentParagraph">The Linux kernel is an open source software project of fairly large scope.
-            For most of the lifetime of the Linux kernel maintenance (1991–2002), changes
-            to the software were passed around as patches and archived files. In 2002,
-            the Linux kernel project began using a proprietary DVCS called BitKeeper.</p>
-        <p class="contentParagraph">In 2005, the relationship between the community that developed the Linux
-            kernel and the commercial company that developed BitKeeper broke down,
-            and the tool’s free-of-charge status was revoked. This prompted the Linux
-            development community (and in particular Linus Torvalds, the creator of Linux)
-            to develop their own tool based on some of the lessons they learned while
-            using BitKeeper. Some of the goals of the new system were as follows:</p>
-        <p class="contentParagraph">Speed
-            - Simple design
-            - Strong support for non-linear development (thousands of parallel branches)
-            - Fully distributed
-            - Able to handle large projects like the Linux kernel efficiently (speed and data size)</p>
-        <p class="contentParagraph">Since its birth in 2005, Git has evolved and matured to be easy to use and
-            yet retain these initial qualities. It’s incredibly fast, it’s very efficient with large
-            projects, and it has an incredible branching system for non-linear
-            development (See Git Branching).</p>
+<div class="bottomNavigation">
+    <div class="row">
+        <div class="col-6">
+            <a href="index.html"><h2><<< Home</h2></a>
+        </div>
+        <div class="col-6">
+            <h2>Repositories >>></h2>
+        </div>
     </div>
 </div>
-<div class="content3">
-    <div>
-        <h1 class="contentTitle">What is git</h1>
-        <p class="contentParagraph">Git is a free and open source distributed version control system
-            designed to handle everything from small to very large projects
-            with speed and efficiency.</p>
-        <p class="contentParagraph">
-            Git is easy to learn and has a tiny footprint with lightning fast
-            performance. It outclasses SCM tools like Subversion, CVS, Perforce,
-            and ClearCase with features like cheap local branching, convenient
-            staging areas, and multiple workflows.</p>
-    </div>
+<div>
+    <footer class="bottomFooter">
+        <div class="row">
+            <div class="col-5"></div>
+            <div class="col-05">
+                <a href="https://www.github.com/ribicnejc"><img class="footerImg" src="../assets/github_icon.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="mailto:nejc.ribic95@gmail.com?"><img class="footerImg" src="../assets/mail-xxl.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="https://www.linkedin.com/in/nejc-ribi%C4%8D-6a23b3a1/"><img class="footerImg" src="../assets/linkedin-3-512.png"></a>
+            </div>
+            <div class="col-05">
+                <a href="https://www.facebook.com/nejc.ribic.3"><img class="footerImg" src="../assets/facebook-logo-png-2332.png"></a>
+            </div>
+            <div class="col-5"></div>
+        </div>
+    </footer>
 </div>
-<div class="bottom"></div>
+
 </body>
 </html>

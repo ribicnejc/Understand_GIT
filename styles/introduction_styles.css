@@ -94,9 +94,17 @@ p {
     box-sizing: border-box;
 }
 
+div.content1,
+div.content2,
+div.content3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 /*##### Title #####*/
 div.titleBar {
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
     background-color: #F05033;
 
 }
@@ -111,10 +119,81 @@ div.titleBar h1.titleBarTitle {
 /*##### Content #####*/
 
 h1.contentTitle {
-    font-size: 90px;
+    font-size: 70px;
     font-weight: 100;
     color: #4D4D4D;
     margin-bottom: 0;
-    padding-left: 100px;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 0;
 }
 
+div.content p {
+    line-height: 1.5;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+/*##### Content2 #####*/
+div.content2 {
+    background-color: #E5E5E5;
+    text-align: right;
+}
+
+div.content2 ul.listItems {
+    padding-left: 21%;
+    padding-right: 21%;
+    float: right;
+    direction: rtl;
+}
+
+div.content2 ul.listItems a {
+    line-height: 1.5;
+}
+
+
+/*##### Bottom Navigation #####*/
+div.bottomNavigation {
+    background-color: #F05033;
+    opacity: 0.58;
+    text-align: center;
+}
+
+div.bottomNavigation h2 {
+    color: #f1f1f1;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+div.bottomNavigation a {
+    text-decoration: none;
+}
+
+/*##### Footer #####*/
+footer.bottomFooter {
+    padding: 20px;
+    background-color: #666666;
+}
+
+footer.bottomFooter img.footerImg {
+    width: auto;
+    height: 20px;
+    margin: auto;
+    display: block;
+}
+
+
+
+
+/*##### Mobile #####*/
+@media screen and (max-width: 680px) {
+
+    /*##### Footer #####*/
+    footer.bottomFooter div.col-05 {
+        width: 8.33%;
+    }
+
+    footer.bottomFooter div.col-5 {
+        width: 33.33%;
+    }
+}

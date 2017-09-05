@@ -151,6 +151,15 @@ div.content2 ul.listItems a {
     line-height: 1.5;
 }
 
+/*##### Content3 #####*/
+div.content3 ul.listItems {
+    padding-left: 21%;
+    padding-right: 21%;
+}
+
+div.content3 ul.listItems a {
+    line-height: 1.5;
+}
 
 /*##### Bottom Navigation #####*/
 div.bottomNavigation {

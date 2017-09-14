@@ -21,4 +21,8 @@ window.onclick = function(e) {
             myDropdown.classList.remove('show');
         }
     }
+};
+
+function showIntroductionPage(){
+    window.location = "/html/introduction.html"
 }

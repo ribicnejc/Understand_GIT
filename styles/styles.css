@@ -300,6 +300,10 @@ div.bottomButtonGroup div.col-4 {
     padding: 30px;
 }
 
+a.buttonHrefA {
+    text-decoration: none;
+}
+
 /*##### Footer #####*/
 footer.bottomFooter {
     padding: 20px;
